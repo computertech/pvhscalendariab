@@ -21,21 +21,11 @@
 	<title>PVHSCalendar</title>
 	<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
 	<script type="text/javascript" charset="UTF-8">
-	document.addEventListener("deviceready", onDeviceReady, false); //creates a listener that waits for the deviceready event and then fires onDevice ready function
-		function onDeviceReady() {
-			document.getElementById('afterlog').style.visibility = 'hidden';
-		}
 		function ready() {
-			window.open('http://pvrhs.com/pvtheater/jstesting', '_blank', 'location=no', 'EnableViewPortSlace=no');
-			document.getElementById('afterlog').style.visibility = 'visible';
-			document.getElementById('presslog').style.visibility = 'hidden';
-			}
-		function afterlogin() {
 			window.open('http://pvrhs.com/pvtheater/jstesting', '_blank', 'location=no', 'EnableViewPortSlace=no');
 		}
 	</script>
 	</head>
-	<button id="presslog" onclick="ready()">Welcome to the PVHS Calendar App! In order to get access to the calendar, you must first login with a Google account. You can click here in order to login. After you have logged in, simply press the back key on your phone.</button>
-	<button id="afterlog" onclick="afterlogin()">When you have logged in, click here</button>
+	<button id="presslog" onclick="ready()">Welcome to the PVHS Calendar App! In order to get access to the calendar, you must first login with a Google account. You can touch here in order to login. After you have logged in, simply press the back key on your phone. If you have already logged in, touch here in order to open the calendar.</button>
 </body>
 </html>
