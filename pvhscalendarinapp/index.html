@@ -2,6 +2,11 @@
 <html>
 <body>
 	<head>
+		<style>
+			#body {
+				background-color:#003300;
+			}
+		</style>
 	<meta
   name="viewport"
   content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
@@ -13,7 +18,11 @@
 		function onDeviceReady() {
 			window.open('http://pvrhs.com/pvtheater/jstesting', '_blank', 'location=no', 'EnableViewPortSlace=no');
 			}
+		function afterlogin() {
+			window.open('http://pvrhs.com/pvtheater/jstesting', '_blank', 'location=no', 'EnableViewPortSlace=no');
+		}
 	</script>
 	</head>
+	<button type="button" id="afterlog" onclick="afterlogin()">When you have logged in, click here</button>
 </body>
 </html>
