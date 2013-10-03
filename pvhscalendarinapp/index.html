@@ -12,7 +12,7 @@
 				margin: 0 auto;
 				max-width:100%;
 				max-height:100%;
-				font-size:100px;	
+				font-size:100px;
 			}
 		</style>
 	<meta
@@ -21,8 +21,14 @@
 	<title>PVHSCalendar</title>
 	<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
 	<script type="text/javascript" charset="UTF-8">
+	document.addEventListener("deviceready", onDeviceReady, false); //creates a listener that waits for the deviceready event and then fires onDevice ready function
+		function onDeviceReady() {
+			document.getElementById('afterlog').style.visibility = 'hidden';
+		}
 		function ready() {
 			window.open('http://pvrhs.com/pvtheater/jstesting', '_blank', 'location=no', 'EnableViewPortSlace=no');
+			document.getElementById('afterlog').style.visibility = 'visible';
+			document.getElementById('presslog').style.visibility = 'visible';
 			}
 		function afterlogin() {
 			window.open('http://pvrhs.com/pvtheater/jstesting', '_blank', 'location=no', 'EnableViewPortSlace=no');
